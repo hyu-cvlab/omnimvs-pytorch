@@ -1,0 +1,86 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.mex*
+*.dSYM
+*.pyc
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# User data
+.DS_Store
+
+# Temporary files
+*~
+*.swp
+*.asv
+*.log
+.vscode
+__pycache__
+
+# Images and videos
+*.png
+*.jpg
+*.bmp
+*.pgm
+*.gif
+*.fig
+*.mov
+*.avi
+*.mp4
+
+# Data: Point cloud, mesh files
+*.ply
+*.obj
+*.stl
+
+*.mat
+*.zip
+*.db
+*.pt
+*.hwd
+
+# Common data/binary directories
+dump
+output
+result
+build
+lib
+snapshot
+.vscode/settings.json
+data
+results
+
+
+# catkin (ros)
+.catkin*
+devel
+logs
+ros-kinetic/src/CMakeLists.txt

@@ -1,0 +1,151 @@
+# sunny/config.yaml
+#
+
+config:
+  omnimvs_sweep_min_depth: 1.65 # minimum depth
+
+dataset:
+  img_fmt: "cam%d/%04d.png" # image file format
+  lut_fmt: "lt_(%d,%d,%d).hwd" # look up table file format
+  trajectory_file: "trajectory.txt" # trajectory file path
+  frame_index_file: "idxs.txt" # frame idx file path
+
+  start: 1 # start frame index
+  step: 1 # step frame index
+  end: 1 # end frame index
+
+cameras:
+  - cam_id: 1
+    img_dir: "cam1"
+    model: "ocam"
+    poly:
+      [
+        5,
+        -1.966560e+02,
+        0.000000e+00,
+        3.053428e-03,
+        -9.784996e-06,
+        2.278718e-08,
+      ]
+      # polynomial coefficients for the DIRECT mapping function (ocam_model.ss in MATLAB). These are used by cam2world
+    inv_poly:
+      [
+        13,
+        300.888356,
+        180.967781,
+        -21.353055,
+        14.896848,
+        31.786100,
+        -12.778866,
+        -10.889768,
+        20.862822,
+        6.557302,
+        -10.383775,
+        -2.519069,
+        2.891402,
+        1.028544,
+      ]
+      # polynomial coefficients for the inverse mapping function (ocam_model.invpol in MATLAB). These are used by world2cam
+    center:
+      [383.000000, 399.000000]
+      # center: "row" and "column", starting from 0 (C convention)
+    affine:
+      [1.000000, 0.000000, 0.000000]
+      # affine parameters "c", "d", "e"
+    image_size:
+      [768, 800]
+      # image size: "height" and "width"
+    invalid_mask: "mask1.png"
+    pose: [0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.600000]
+    max_fov: 220.0 # maximum input fov (degree)
+
+  - cam_id: 2
+    img_dir: "cam2"
+    model: "ocam"
+    poly: [5, -1.952845e+02, 0.0e+00, 3.144000e-03, -1.200000e-05, 2.486384e-08]
+    inv_poly:
+      [
+        18,
+        323.629199,
+        197.843945,
+        -49.665142,
+        26.330296,
+        53.715508,
+        -72.809331,
+        13.824609,
+        118.439118,
+        -78.606602,
+        -111.666632,
+        96.160106,
+        75.674015,
+        -59.105222,
+        -35.206173,
+        19.094882,
+        10.136929,
+        -2.487794,
+        -1.285659,
+      ]
+    center: [383.000000, 399.000000]
+    affine: [1.000000, 0.000000, 0.000000]
+    image_size: [768, 800]
+    invalid_mask: "mask2.png"
+    pose: [0.000000, 1.570796326794897, 0.000000, 0.600000, 0.000000, 0.000000]
+    max_fov: 220.0 # maximum input fov (degree)
+
+  - cam_id: 3
+    img_dir: "cam3"
+    model: "ocam"
+    poly: [5, -1.961306e+02, 0.0e+00, 2.443660e-03, -6.311796e-06, 1.710723e-08]
+    inv_poly:
+      [
+        13,
+        304.912574,
+        182.614202,
+        -14.835523,
+        19.282275,
+        23.836316,
+        -9.545246,
+        -1.666827,
+        15.823282,
+        1.062545,
+        -7.531972,
+        -0.379030,
+        2.393536,
+        0.690840,
+      ]
+    center: [383.000000, 399.000000]
+    affine: [1.000000, 0.000000, 0.000000]
+    image_size: [768, 800]
+    invalid_mask: "mask3.png"
+    pose: [0.000000, 3.141592653589793, 0.000000, 0.000000, 0.000000, -0.600000]
+    max_fov: 220.0 # maximum input fov (degree)
+
+  - cam_id: 4
+    img_dir: "cam4"
+    model: "ocam"
+    poly: [5, -1.901115e+02, 0.0e+00, 2.210202e-03, -4.576664e-06, 1.417824e-08]
+    inv_poly:
+      [
+        14,
+        299.951227,
+        185.013857,
+        -7.263880,
+        18.377107,
+        21.416860,
+        -4.718155,
+        -1.264684,
+        11.644929,
+        2.355373,
+        -5.187119,
+        -1.178801,
+        1.663296,
+        0.886764,
+        0.125755,
+      ]
+    center: [383.000000, 399.000000]
+    affine: [1.000000, 0.000000, 0.000000]
+    image_size: [768, 800]
+    invalid_mask: "mask4.png"
+    pose:
+      [0.000000, -1.570796326794897, 0.000000, -0.600000, 0.000000, 0.000000]
+    max_fov: 220.0 # maximum input fov (degree)
