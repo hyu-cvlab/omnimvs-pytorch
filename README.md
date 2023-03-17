@@ -12,8 +12,8 @@ This repository contains python codes for paper, "End-to-End Learning for Omnidi
 ## How to run
 ### Test (run_test_omnimvs.py)
 - Pretrained weights: 
-    - [[omnimvs_plus_ft.pt](https://bit.ly/3nlRrj4)]
-    - [[tiny_plus_ft.pt](https://bit.ly/2ERUQob)]
+    - [[omnimvs_plus_ft.pt](http://bit.ly/3TkLy64)]
+    - [[tiny_plus_ft.pt](https://bit.ly/42h52fP)]
 - Set **arguments** in the script
 - Run ``` python run_test_omnimvs.py [path_to_pt_file] [dbname]```
 
