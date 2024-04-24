@@ -21,7 +21,7 @@ This repository contains python codes for paper, "End-to-End Learning for Omnidi
 <img src="https://user-images.githubusercontent.com/7540390/94922956-12466000-04f6-11eb-9944-a02384d68cb3.png" width=42.7%><img src="https://user-images.githubusercontent.com/7540390/94922979-170b1400-04f6-11eb-9b6c-85caac809d5f.png" width=50%>
 
 ## Dataset
-You can download the synthetic datasets in the [project page](http://cvlab.hanyang.ac.kr/project/omnistereo).
+You can download the synthetic datasets in the [project page](https://rvlab.snu.ac.kr/research/omnistereo).
 
 The directory structure should be like this:
 ```
